@@ -1,0 +1,123 @@
+:root {
+    --bg-color: #0d1117;
+    --panel-bg: #161b22;
+    --text-primary: #e6edf3;
+    --accent-a: #3776ab;
+    --accent-b: #f7df1e;
+    --vote-btn-bg: #21262d;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: var(--panel-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #30363d;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.voter-id {
+    font-size: 0.8rem;
+    color: #8b949e;
+    margin-bottom: 2rem;
+}
+
+.vote-section {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.vote-btn {
+    flex: 1;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--vote-btn-bg);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-a:hover {
+    border-color: var(--accent-a);
+    background: rgba(55, 118, 171, 0.1);
+}
+
+.btn-b:hover {
+    border-color: var(--accent-b);
+    background: rgba(247, 223, 30, 0.1);
+}
+
+.status-message {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: rgba(46, 160, 67, 0.1);
+    color: #3fb950;
+    border-radius: 4px;
+}
+
+.results-container {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #30363d;
+}
+
+.stat-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+}
+
+.bar {
+    height: 20px;
+    background: #21262d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill-a {
+    height: 100%;
+    background: var(--accent-a);
+    transition: width 0.5s ease;
+}
+
+.fill-b {
+    height: 100%;
+    background: var(--accent-b);
+    transition: width 0.5s ease;
+}
+
+.label {
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+
+.total-votes {
+    margin-top: 1rem;
+    color: #8b949e;
+}
